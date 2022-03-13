@@ -49,7 +49,7 @@ console.log(content);
 
 let contentArr = content.split("\r\n");
 
-console.table(contentArr);
+// console.table(contentArr);
 
 //  let check is -s is present in the array or not;
 
@@ -67,16 +67,17 @@ if(isSPresent){
     }
 }
 
-console.table(contentArr);
+// console.table(contentArr);
 let tempArr = [];
 for(let i = 0 ; i <contentArr.length ; i++ ){
 
     if (contentArr[i]!=null){
         tempArr.push(contentArr[i]);
     }
+    contentArr = tempArr;
 }
-console.table(tempArr);
-contentArr = tempArr;
+// console.table(tempArr);
+
 
 let indexOfN = optionArr.indexOf("-n");
 let indexOfB = optionArr.indexOf("-b");
